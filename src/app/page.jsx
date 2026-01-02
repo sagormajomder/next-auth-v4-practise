@@ -1,4 +1,6 @@
 import LogginButton from '@/components/LogginButton';
+import UserCard from '@/components/UserCard';
+import UserServerCard from '@/components/UserServerCard';
 import Link from 'next/link';
 import { FaReact } from 'react-icons/fa';
 import { IoShieldCheckmarkSharp } from 'react-icons/io5';
@@ -7,6 +9,8 @@ import { SiMongodb } from 'react-icons/si';
 export default function Home() {
   return (
     <div className='min-h-screen relative flex flex-col justify-center items-center gap-5 '>
+      <UserCard />
+      <UserServerCard />
       <div className=' flex gap-5 space-x-4 items-center'>
         <FaReact
           size={40}
