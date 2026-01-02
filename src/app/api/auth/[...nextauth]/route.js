@@ -1,6 +1,6 @@
 import NextAuth from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-
+// nextauth store only name, email, image property in session
 const userList = [
   {
     name: 'hablu',
