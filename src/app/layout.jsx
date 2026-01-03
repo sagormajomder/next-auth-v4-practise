@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar';
 import NextAuthProvider from '@/providers/NextAuthProvider';
 import { Poppins } from 'next/font/google';
 import './globals.css';
@@ -9,7 +10,10 @@ const RootLayout = ({ children }) => {
   return (
     <NextAuthProvider>
       <html className={`${poppins.className}`}>
-        <body className=''>{children}</body>
+        <body className=''>
+          <Navbar />
+          {children}
+        </body>
       </html>
     </NextAuthProvider>
   );

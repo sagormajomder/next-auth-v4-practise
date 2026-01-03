@@ -38,7 +38,7 @@ export const authOptions = {
       return true;
     },
     async redirect({ url, baseUrl }) {
-      return baseUrl;
+      return url || baseUrl;
     },
     async session({ session, token, user }) {
       if (token) {

@@ -1,3 +1,4 @@
+import AuthButtons from '@/components/AuthButtons';
 import LogginButton from '@/components/LogginButton';
 import UserCard from '@/components/UserCard';
 import UserServerCard from '@/components/UserServerCard';
@@ -21,12 +22,7 @@ export default function Home() {
       </div>
       <div className='relative'>
         <h2 className='text-5xl'>NEXT AUTH</h2>
-      </div>
-      <div className='flex gap-5'>
-        <LogginButton />
-        <Link href={'/register'} className='btn'>
-          Register
-        </Link>
+        <AuthButtons />
       </div>
     </div>
   );
