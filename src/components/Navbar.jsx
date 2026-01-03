@@ -6,6 +6,7 @@ export default function Navbar() {
       <Link href={'/'}>Home</Link>
       <Link href={'/public'}>Public</Link>
       <Link href={'/private'}>Private</Link>
+      <Link href={'/dashboard'}>Dashboard</Link>
       <Link href={'/admin'}>Admin</Link>
     </div>
   );
