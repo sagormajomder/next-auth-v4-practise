@@ -19,13 +19,18 @@ export async function postUser(payload) {
     role: 'user',
     password: hashPassword,
   };
-  //  store use into DB
+  //  store user into DB
   const result = await dbConnect('users').insertOne(newUser);
 
   if (result.acknowledged) {
     return {
       success: true,
       message: `User is registered with this id ${result.insertedId.toString()}`,
+    };
+  } else {
+    return {
+      success: false,
+      message: `Something went wrong`,
     };
   }
 }
